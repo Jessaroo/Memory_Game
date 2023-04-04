@@ -18,38 +18,59 @@ h2 {
 }
 
 .flip-card {
-    display: flex;
+    /*display: grid;*/
     background-color: transparent;
     height:100%;
     width:100%;
     border: 0.1vmin;
+    perspective: 165vmin;
 }
 
 .flip-card-inner {
-    display: flex;
+    display: grid;
     height: 100%;
     width: 100%;
     position:relative;
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
 }
 
+/*.flip-card:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}*/
+
 .flip-card-front, .flip-card-back {
-    display:flex;
+    display:grid;
     height: 100%;
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
 }
 
+img {
+    display: grid;
+    height: 15vmin;
+    width: 10vmin;
+    border: 0.2vmin;
+}
+
 .flip-card-front {
-    height: 100%;
-    width: 100%;
+    display: grid;
+    height: 15vmin;
+    width: 10vmin;
+    border: 0.2vmin;
+    
 }
 
 .flip-card-back {
+    display: grid;
+    height: 15vmin;
+    width: 10vmin;
+    border: 0.2vmin;
     transform: rotateX(180deg);
 }
+
 /*  to design the rows & columns */
 #board {
     display: grid;
@@ -59,9 +80,19 @@ h2 {
     margin-top: auto;
 }
 
-#board > div {
-    border: 0.2vmin solid black;
-    border-radius: 25%;
+
+button {
+    margin-top: 8vmin;
+    font-size: 3vmin;
+    border: 0.06vmin solid black;
+    border-radius: 3vmin;
+    padding: 2.5vmin;
+    color: black;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 
