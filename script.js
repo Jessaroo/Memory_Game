@@ -36,35 +36,51 @@ cards = [];
 time = 0;
 flips = 0;
 highscore = {
-    time:null,
-    flips: null
+    time:[],
+    flips: [],
     };
 }
 
 /* Flip cards over*/
 function flipped(cardContainer) {
     const card = cardContainer
-    console.log(card)
+    console.log(card);
     /*card.style.transform = "rotateX(180deg)";*/
     /*card.classList.toggle('flipped');*/
     if (chosen.length == 0) {
-        card1 = card
-        console.log(card1)
-    };
-    if (chosen.length == 2) {
-        card2 = card
-        console.log(card2)
+        card1 = card;
+        console.log(card1);
+    } else if (chosen.length === 1) {
+        card2 = card;
+        console.log(card2);
     }
-    chosen.push(card.dataset.id)
+    
+    if (chosen.length === 2) {
+        if (chosen[0] === chosen[1]) {
+            matches ++;
+            chosen = [];
+        } else {
+            setTimeout(() => {
+                card1.style.transform = 'rotateX(0deg)';
+                card2.style.transform = 'rotateX(0deg)';
+                chosen = [];
+                console.log("Delay for 4 seconds");
+            }, 4000);
+        }
+    }
+}
+    chosen.push(card.dataset.id);
         
 /*How to know if the player won. check for card matches */
-    console.log(matches)
-    console.log(chosen)
+   
     if(chosen.length === 2) {
         matches = chosen.every(id => id === chosen[0]) ? matches + 1: matches + 0
         chosen = []
+        console.log(matches);
+        console.log(chosen);
     }
-}  
+    
+ 
 
 /* How to know if the player lost. check for cards not matching */
 
