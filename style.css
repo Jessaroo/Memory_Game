@@ -17,6 +17,10 @@ h2 {
     font-family: sans-serif;
 }
 
+body {
+   background-color: aliceblue; 
+}
+
 .flip-card {
     /*display: grid;*/
     background-color: transparent;
@@ -94,5 +98,12 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+.matched {
+    transform: rotateX(180deg);
+    pointer-evts: none;
+}
+
+
 
 
