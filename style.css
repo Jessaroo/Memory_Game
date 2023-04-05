@@ -99,10 +99,10 @@ button:hover {
     color: white;
 }
 
-.matched {
+/*.matched {
     transform: rotateX(180deg);
     pointer-evts: none;
-}
+}*/
 
 
 

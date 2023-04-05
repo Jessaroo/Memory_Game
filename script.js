@@ -54,31 +54,34 @@ function flipped(cardContainer) {
         card2 = card;
         console.log(card2);
     }
+    chosen.push(card.dataset.id);
     
     if (chosen.length === 2) {
         if (chosen[0] === chosen[1]) {
             matches ++;
             chosen = [];
         } else {
+            chosen = [];
+            const cardsToFlip = [card1, card2];
             setTimeout(() => {
-                card1.style.transform = 'rotateX(0deg)';
-                card2.style.transform = 'rotateX(0deg)';
-                chosen = [];
-                console.log("Delay for 4 seconds");
-            }, 4000);
+                cardsToFlip.forEach((card) => {
+                    card.style.transform = 'rotateX(0deg)';
+                });
+                console.log(card1, card2);
+            }, 1000);
         }
     }
 }
-    chosen.push(card.dataset.id);
+    // chosen.push(card.dataset.id);
         
 /*How to know if the player won. check for card matches */
    
-    if(chosen.length === 2) {
+    /*if(chosen.length === 2) {
         matches = chosen.every(id => id === chosen[0]) ? matches + 1: matches + 0
         chosen = []
         console.log(matches);
         console.log(chosen);
-    }
+    }*/
     
  
 
