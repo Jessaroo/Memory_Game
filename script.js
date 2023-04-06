@@ -66,11 +66,11 @@ function flipped(cardContainer) {
     /*card.classList.toggle('flipped');*/
     turns++;
     if (turns >= 15) {
-        header.innerText="Better Luck Next Time"
+        header.innerText="Better Luck Next Time!"
         h2.innerText = ''
         return; 
     } else {
-        h2. innerText="Remaining turns" + (15-turns)
+        h2. innerText="Remaining Turns: " + (15-turns)
 
     }
     if (chosen.length == 0) {

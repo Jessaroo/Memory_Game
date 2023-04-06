@@ -1,24 +1,45 @@
 header {
     color: black;
     font-size: 8vmin;
-    font-family: helvetica;
+    font-family: cursive;
     letter-spacing: 1vmin;
+    background-color: aqua;
+    text-align: center;
 }
 
 h1 {
-    color: darkgreen;
+    color: rgb(63, 213, 158);
+    background-color: aliceblue;
     font-size: 4vmin;
     font-family: sans-serif;
+    /*background-color: lightgray;*/
+    text-align: center;
 }
 
 h2 {
     color: maroon;
     font-size: 4vmin;
     font-family: sans-serif;
+    background-color: lightgray;
+    text-align: center;
 }
 
 body {
-   background-color: aliceblue; 
+   background-color: rgb(157, 108, 241);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+
+footer {
+    font-size: 2.5vmin;
+    text-align: center;
+    display: flex;
+    padding-left: 50vmin;
+    padding-right: 50vmin;
+    padding-top: 5vmin;
+    padding-bottom: 3vmin;
 }
 
 .flip-card {
@@ -40,10 +61,6 @@ body {
     transform-style: preserve-3d;
 }
 
-/*.flip-card:hover .flip-card-inner {
-    transform: rotateX(180deg);
-}*/
-
 .flip-card-front, .flip-card-back {
     display:grid;
     height: 100%;
@@ -62,15 +79,14 @@ img {
 .flip-card-front {
     display: grid;
     height: 15vmin;
-    width: 10vmin;
+    width: 15vmin;
     border: 0.2vmin;
-    
 }
 
 .flip-card-back {
     display: grid;
     height: 15vmin;
-    width: 10vmin;
+    width: 15vmin;
     border: 0.2vmin;
     transform: rotateX(180deg);
 }
@@ -84,13 +100,12 @@ img {
     margin-top: auto;
 }
 
-
 button {
-    margin-top: 8vmin;
+    margin-top: 6vmin;
     font-size: 3vmin;
     border: 0.06vmin solid black;
     border-radius: 3vmin;
-    padding: 2.5vmin;
+    padding: 2.2vmin;
     color: black;
 }
 

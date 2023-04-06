@@ -1,5 +1,9 @@
-Pseudocode for Memory Game
+Memory-Game
 
+
+
+
+Pseudocode
 Download cards for a memory game.
 
 A player will have 12 tries to match as many sets as they can. 
@@ -20,6 +24,8 @@ The player will click a button that says “Play Again”.
 Would need to shuffle the cards at the beginning of each game so that they are in a random order. – For Loop.
 
 Need to have the clicks recognized 
+
+ https://jessaroo.github.io/Memory_Game/
 
 
 
