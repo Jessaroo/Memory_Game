@@ -18,6 +18,7 @@ const cards = document.querySelector(".flip-card")
 const playAgainBtn = document.querySelector('button');
 const board = document.querySelector('#board');
 const header= document.querySelector('#message');
+const h2 = document.querySelector('#turnscountdown');
 
 /* event listeners. */
 board.addEventListener('click', flipCard);
@@ -63,6 +64,15 @@ function flipped(cardContainer) {
     console.log(card);
     /*card.style.transform = "rotateX(180deg)";*/
     /*card.classList.toggle('flipped');*/
+    turns++;
+    if (turns >= 15) {
+        header.innerText="Better Luck Next Time"
+        h2.innerText = ''
+        return; 
+    } else {
+        h2. innerText="Remaining turns" + (15-turns)
+
+    }
     if (chosen.length == 0) {
         card1 = card;
         console.log(card1);
@@ -81,12 +91,11 @@ function flipped(cardContainer) {
                 /*console.log('gamewon'); */
             }
             chosen = [];
+            /* turns start at 5*/
+            /* decrement by 1 */
+            /* turns  */
         } else {
             chosen = [];
-            turns ++;
-            if (turns === 5) {
-                header.innerText="Better Luck Next Time"
-            }
             const cardsToFlip = [card1, card2];
             setTimeout(() => {
                 cardsToFlip.forEach((card) => {
@@ -134,3 +143,11 @@ initialize function*/
     cards.toggleClassName('flipped');
 }, false); */
 
+/* 1, turns start at 0.
+   1.5, each click increment turns by 1
+   2, turns equals one click. 15 clicks to get 6 matches to win
+   2.5, while game is played show user how many clicks are remaining
+   2.75, if turns equals 15 stop game from being played
+   3, if 15 clicks then player lost
+   4, if 15 clicks are met message displays that player lost
+   */
