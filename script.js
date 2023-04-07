@@ -55,7 +55,7 @@ function flipped(cardContainer) {
     } else {
         h2. innerText="Remaining Turns: " + (15-turns)
     }
-    if (chosen.length == 0) {
+    if (chosen.length === 0) {
         card1 = card;
         console.log(card1);
     } else if (chosen.length === 1) {

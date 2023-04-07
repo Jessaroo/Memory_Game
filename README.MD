@@ -6,11 +6,15 @@ There are twelve cards and 6 pairs need to be matched in order to win.
 The player is allowed 15 turns to try to select the 6 pairs.
 By clicking Play again the board resets and the player can get started immediately.  
 
-To get started click here: https://jessaroo.github.io/Memory_Game/
+<img src="Ice Cream Images/Game Small.jpeg" alt="cards" style="width: 50%">
+<img src="Ice Cream Images/Game won Small.jpeg" alt="cards" style="width: 50%">
+<img src="Ice Cream Images/Game lost Small.jpeg" alt="cards" style="width: 50%">
 
 
 Technology Used:
 I used HTML, CSS, JavaScript, jQuery. 
 
 
-Next Steps: I plan to enhance my game more by creating more functions to manipulate the DOM instead of creating one big function that 
+Getting started click here: https://jessaroo.github.io/Memory_Game/
+
+Next Steps: 
