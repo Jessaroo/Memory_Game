@@ -12,7 +12,7 @@ By clicking Play again the board resets and the player can get started immediate
 
 
 Technology Used:
-I used HTML, CSS, JavaScript, jQuery. 
+I used HTML, CSS, JavaScript. 
 
 
 Getting started click here: https://jessaroo.github.io/Memory_Game/
