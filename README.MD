@@ -1,31 +1,16 @@
-Memory-Game
+                       Memory-Game       
+
+This game is like a traditional memory card matching game. 
+A player gets to choose the cards to match
+There are twelve cards and 6 pairs need to be matched in order to win. 
+The player is allowed 15 turns to try to select the 6 pairs.
+By clicking Play again the board resets and the player can get started immediately.  
+
+To get started click here: https://jessaroo.github.io/Memory_Game/
 
 
+Technology Used:
+I used HTML, CSS, JavaScript, jQuery. 
 
 
-Pseudocode
-Download cards for a memory game.
-
-A player will have 12 tries to match as many sets as they can. 
-
-The player will click on a card and the card will be displayed when they click on the second card of their choice that first cad will remain flipped so that they can see if they were a match. 
-	If the cards did not match they both will be flipped back over.
-        the cards will be turned back over after 5 seconds if they are not a pair. 
-	If the cards did match they will remain flipped up to reflect the pair that was matched.
-
-Once the player reaches 12 tries the game will end and display either “’‘You’re a rockstar” or “’Better Luck Next Time”.
-
-A player will win if they match all 12 cards. 
-
-A player will lose if they do not match 6 pairs. 
-
-The player will click a button that says “Play Again”.
-
-Would need to shuffle the cards at the beginning of each game so that they are in a random order. – For Loop.
-
-Need to have the clicks recognized 
-
- https://jessaroo.github.io/Memory_Game/
-
-
-
+Next Steps: I plan to enhance my game more by creating more functions to manipulate the DOM instead of creating one big function that 
